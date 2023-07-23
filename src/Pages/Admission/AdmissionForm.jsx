@@ -1,24 +1,33 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../providers/AuthProviders";
+import { useParams } from "react-router-dom";
 
 const AdmissionForm = () => {
+  const [college, setCollege] = useState([]);
+  const { id } = useParams();
   const { user } = useContext(AuthContext);
+  useEffect(() => {
+    fetch(`${import.meta.env.VITE_HOSTING_URL}/college-cards/${id}`)
+      .then((res) => res.json())
+      .then((data) => setCollege(...data));
+  }, [id]);
+  console.log(college);
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
     const name = form.name.value;
     const subject = form.subject.value;
-    const candidateEmail = form.email.value;
+    // const candidateEmail = form.email.value;
     const phone = form.phone.value;
     const address = form.address.value;
     const dateOfBirth = form.dateOfBirth.value;
     const image = form.image.value;
 
     const candidateInfo = {
-      userEmail: user?.email,
+      collegeName: college.collegeName,
       name,
       subject,
-      candidateEmail,
+      candidateEmail: user?.email,
       phone,
       address,
       dateOfBirth,
@@ -71,10 +80,11 @@ const AdmissionForm = () => {
             Candidate Email
           </label>
           <input
+            defaultValue={user?.email}
             type="email"
             name="email"
             className="w-full border border-gray-300 rounded py-2 px-3"
-            required
+            readOnly
           />
         </div>
         <div className="mb-4">

@@ -24,13 +24,13 @@ const Admission = () => {
           </thead>
           <tbody>
             {/* row 1 */}
-            {colleges.map(({ collegeName, collegeRating }, i) => (
+            {colleges.map(({ _id, collegeName, collegeRating }, i) => (
               <tr key={i}>
                 <th>{i + 1}</th>
                 <td>{collegeName}</td>
                 <td>{collegeRating}</td>
                 <td>
-                  <Link to='/admission-form'>
+                  <Link to={`/admission-form/${_id}`}>
                     <button>Admit</button>
                   </Link>
                 </td>

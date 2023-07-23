@@ -1,0 +1,322 @@
+[
+  {
+    "collegeImage": "college1.jpg",
+    "collegeName": "ABC University",
+    "collegeRating": 4.5,
+    "admissionDate": "August 2023",
+    "numOfResearch": 120,
+    "admissionProcess": [
+      "Submit the online application form on the university website.",
+      "Appear for the entrance examination on the specified date.",
+      "Attend the counseling session based on exam results and preferences.",
+      "Complete the admission formalities and pay the fees."
+    ],
+    "events": [
+      {
+        "name": "Freshers Party",
+        "date": "September 1, 2023",
+        "description": "A fun-filled event to welcome new students."
+      },
+      {
+        "name": "Tech Fest",
+        "date": "October 15-17, 2023",
+        "description": "An extravaganza of technology and innovation."
+      },
+      {
+        "name": "Cultural Night",
+        "date": "December 10, 2023",
+        "description": "A showcase of diverse cultural performances."
+      }
+    ],
+    "researchWorks": [
+      {
+        "title": "Advancements in Robotics",
+        "author": "Dr. John Smith",
+        "publishedYear": 2022,
+        "description": "A groundbreaking research paper on robotics."
+      },
+      {
+        "title": "Climate Change Mitigation",
+        "author": "Dr. Sarah Johnson",
+        "publishedYear": 2021,
+        "description": "Research on effective strategies for climate change mitigation."
+      }
+    ],
+    "sports": [
+      {
+        "category": "Football",
+        "coach": "John Anderson",
+        "practiceSchedule": "Tuesdays and Thursdays, 4 PM - 6 PM",
+        "description": "Join the university football team for exciting matches."
+      },
+      {
+        "category": "Basketball",
+        "coach": "Michael Davis",
+        "practiceSchedule": "Mondays and Wednesdays, 5 PM - 7 PM",
+        "description": "Participate in thrilling basketball tournaments."
+      },
+      {
+        "category": "Swimming",
+        "coach": "Emma White",
+        "practiceSchedule": "Fridays, 6 AM - 8 AM, and Saturdays, 7 AM - 9 AM",
+        "description": "Dive into the pool and improve your swimming skills."
+      }
+    ]
+  },
+  {
+    "collegeImage": "college2.jpg",
+    "collegeName": "XYZ College",
+    "collegeRating": 4.2,
+    "admissionDate": "September 2023",
+    "numOfResearch": 80,
+    "admissionProcess": [
+      "Submit the online application form on the college website.",
+      "Appear for the entrance examination or based on merit.",
+      "Attend the counseling session for course selection.",
+      "Complete the admission formalities and pay the fees."
+    ],
+    "events": [
+      {
+        "name": "Annual Fest",
+        "date": "October 5-7, 2023",
+        "description": "A grand celebration of arts, culture, and creativity."
+      },
+      {
+        "name": "Science Exhibition",
+        "date": "November 20, 2023",
+        "description": "Showcasing scientific discoveries and inventions."
+      },
+      {
+        "name": "Literary Meet",
+        "date": "December 15, 2023",
+        "description": "A gathering of literary enthusiasts to share their work."
+      }
+    ],
+    "researchWorks": [
+      {
+        "title": "Advancements in Nanotechnology",
+        "author": "Prof. Emily Carter",
+        "publishedYear": 2022,
+        "description": "Exploring nanoscale materials for various applications."
+      },
+      {
+        "title": "Healthcare Innovations",
+        "author": "Dr. Mark Thompson",
+        "publishedYear": 2021,
+        "description": "Improving healthcare with technological advancements."
+      }
+    ],
+    "sports": [
+      {
+        "category": "Cricket",
+        "coach": "Andrew Taylor",
+        "practiceSchedule": "Wednesdays and Fridays, 3 PM - 5 PM",
+        "description": "Join the college cricket team for competitive matches."
+      },
+      {
+        "category": "Badminton",
+        "coach": "Sarah Lee",
+        "practiceSchedule": "Mondays and Thursdays, 6 PM - 8 PM",
+        "description": "Enjoy playing badminton with fellow students."
+      },
+      {
+        "category": "Table Tennis",
+        "coach": "Tom Johnson",
+        "practiceSchedule": "Tuesdays and Fridays, 5 PM - 7 PM",
+        "description": "Sharpen your table tennis skills with experienced coaching."
+      }
+    ]
+  },
+  {
+    "collegeImage": "college3.jpg",
+    "collegeName": "PQR Institute",
+    "collegeRating": 4.7,
+    "admissionDate": "July 2023",
+    "numOfResearch": 150,
+    "admissionProcess": [
+      "Fill out the application form and submit necessary documents.",
+      "Shortlisted candidates will undergo a written test or interview.",
+      "Final selection will be based on merit and interview performance.",
+      "Complete the admission formalities within the specified date."
+    ],
+    "events": [
+      {
+        "name": "Cultural Fest",
+        "date": "August 25-27, 2023",
+        "description": "A celebration of diverse cultures through music, dance, and food."
+      },
+      {
+        "name": "Hackathon",
+        "date": "October 8-9, 2023",
+        "description": "A platform for tech enthusiasts to solve real-world challenges."
+      },
+      {
+        "name": "Art Show",
+        "date": "November 12, 2023",
+        "description": "An exhibition showcasing talented artists' creations."
+      }
+    ],
+    "researchWorks": [
+      {
+        "title": "Artificial Intelligence in Healthcare",
+        "author": "Dr. Rachel Adams",
+        "publishedYear": 2022,
+        "description": "Applying AI in medical diagnosis and treatment."
+      },
+      {
+        "title": "Sustainable Architecture",
+        "author": "Prof. James Miller",
+        "publishedYear": 2021,
+        "description": "Designing eco-friendly buildings for a sustainable future."
+      }
+    ],
+    "sports": [
+      {
+        "category": "Tennis",
+        "coach": "Alex Williams",
+        "practiceSchedule": "Mondays and Wednesdays, 4 PM - 6 PM",
+        "description": "Join the college tennis club and enhance your skills."
+      },
+      {
+        "category": "Volleyball",
+        "coach": "Sophia Martinez",
+        "practiceSchedule": "Tuesdays and Thursdays, 5 PM - 7 PM",
+        "description": "Participate in competitive volleyball tournaments."
+      },
+      {
+        "category": "Athletics",
+        "coach": "Robert Johnson",
+        "practiceSchedule": "Fridays, 7 AM - 9 AM, and Saturdays, 8 AM - 10 AM",
+        "description": "Train for track and field events with experienced coaches."
+      }
+    ]
+  },
+  {
+    "collegeImage": "college4.jpg",
+    "collegeName": "LMN University",
+    "collegeRating": 4.3,
+    "admissionDate": "October 2023",
+    "numOfResearch": 90,
+    "admissionProcess": [
+      "Register and apply online through the college admission portal.",
+      "Shortlisted candidates will be called for a written test or interview.",
+      "Merit-based selection and final admissions will be confirmed.",
+      "Pay the admission fees and complete the enrollment process."
+    ],
+    "events": [
+      {
+        "name": "Sports Meet",
+        "date": "November 5-7, 2023",
+        "description": "An annual sports extravaganza with various competitions."
+      },
+      {
+        "name": "Music Festival",
+        "date": "December 18, 2023",
+        "description": "A celebration of music and performances from diverse genres."
+      },
+      {
+        "name": "Workshops",
+        "date": "January 15-17, 2024",
+        "description": "Interactive workshops to enhance skills and knowledge."
+      }
+    ],
+    "researchWorks": [
+      {
+        "title": "Biomedical Engineering Innovations",
+        "author": "Dr. Kate Roberts",
+        "publishedYear": 2022,
+        "description": "Developing advanced medical devices and technologies."
+      },
+      {
+        "title": "Sustainable Agriculture",
+        "author": "Prof. David Lee",
+        "publishedYear": 2021,
+        "description": "Promoting sustainable farming practices for food security."
+      }
+    ],
+    "sports": [
+      {
+        "category": "Soccer",
+        "coach": "Chris Thompson",
+        "practiceSchedule": "Wednesdays and Fridays, 5 PM - 7 PM",
+        "description": "Join the college soccer team and compete in exciting matches."
+      },
+      {
+        "category": "Hockey",
+        "coach": "Elizabeth Adams",
+        "practiceSchedule": "Mondays and Thursdays, 7 PM - 9 PM",
+        "description": "Play hockey and represent the college in tournaments."
+      },
+      {
+        "category": "Karate",
+        "coach": "Sensei John Lee",
+        "practiceSchedule": "Tuesdays and Fridays, 6 PM - 8 PM",
+        "description": "Learn self-defense techniques with karate training."
+      }
+    ]
+  },
+  {
+    "collegeImage": "college5.jpg",
+    "collegeName": "EFG College",
+    "collegeRating": 4.0,
+    "admissionDate": "November 2023",
+    "numOfResearch": 60,
+    "admissionProcess": [
+      "Visit the college admission office to obtain the application form.",
+      "Submit the filled form along with required documents.",
+      "Shortlisted candidates will undergo an entrance exam or interview.",
+      "Admissions will be confirmed based on merit and availability."
+    ],
+    "events": [
+      {
+        "name": "Dance Competition",
+        "date": "December 5, 2023",
+        "description": "A showcase of talented dancers and mesmerizing performances."
+      },
+      {
+        "name": "Science Symposium",
+        "date": "January 20-21, 2024",
+        "description": "Presenting scientific research and discoveries to the audience."
+      },
+      {
+        "name": "Literature Fest",
+        "date": "February 15, 2024",
+        "description": "A celebration of literature and literary achievements."
+      }
+    ],
+    "researchWorks": [
+      {
+        "title": "Renewable Energy Sources",
+        "author": "Dr. Emma Clark",
+        "publishedYear": 2022,
+        "description": "Exploring the potential of renewable energy for a sustainable future."
+      },
+      {
+        "title": "Urban Planning and Development",
+        "author": "Prof. Robert Johnson",
+        "publishedYear": 2021,
+        "description": "Urban planning strategies for efficient and inclusive cities."
+      }
+    ],
+    "sports": [
+      {
+        "category": "Golf",
+        "coach": "Jason Wilson",
+        "practiceSchedule": "Mondays and Thursdays, 4 PM - 6 PM",
+        "description": "Learn and play golf with expert coaching and facilities."
+      },
+      {
+        "category": "Chess",
+        "coach": "Sophie Brown",
+        "practiceSchedule": "Tuesdays and Fridays, 5 PM - 7 PM",
+        "description": "Sharpen your chess skills and participate in tournaments."
+      },
+      {
+        "category": "Yoga",
+        "coach": "Anna Smith",
+        "practiceSchedule": "Saturdays, 8 AM - 10 AM, and Sundays, 9 AM - 11 AM",
+        "description": "Experience the benefits of yoga for physical and mental well-being."
+      }
+    ]
+  }
+]

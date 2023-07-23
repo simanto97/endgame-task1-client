@@ -4,6 +4,10 @@ import Home from "../Pages/Home/Home/Home";
 // import LoginLayout from "../Layout/LoginLayout";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignUp/SignUp";
+import CollegeDetails from "../Pages/Home/CollegeDetails/CollegeDetails";
+import Colleges from "../Pages/Colleges/Colleges";
+import Admission from "../Pages/Admission/Admission";
+import AdmissionForm from "../Pages/Admission/AdmissionForm";
 
 export const router = createBrowserRouter([
   {
@@ -13,6 +17,22 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/college/:id",
+        element: <CollegeDetails />,
+      },
+      {
+        path: "/colleges",
+        element: <Colleges />,
+      },
+      {
+        path: "/admission",
+        element: <Admission />,
+      },
+      {
+        path: "/admission-form",
+        element: <AdmissionForm />,
       },
       {
         path: "/login",

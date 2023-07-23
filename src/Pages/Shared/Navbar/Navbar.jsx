@@ -1,9 +1,18 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../../providers/AuthProviders";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
   const [nav, setNav] = useState(false);
+
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {})
+      .catch((error) => console.log(error));
+  };
+
   const links = [
     {
       id: 1,
@@ -35,9 +44,20 @@ const Navbar = () => {
         ))}
       </ul>
       <div>
-        <h2 className="text-5xl ml-2">
-          <button className="btn btn-secondary">Button</button>
-        </h2>
+        {user ? (
+          <div className="flex items-center">
+            <h2>{user.displayName}</h2>
+            <button onClick={handleLogOut} className="btn btn-ghost capitalize">
+              Log out
+            </button>
+          </div>
+        ) : (
+          <>
+            <Link to="/login">
+              <button className="btn btn-ghost capitalize">Login</button>
+            </Link>
+          </>
+        )}
       </div>
       <div
         onClick={() => setNav(!nav)}

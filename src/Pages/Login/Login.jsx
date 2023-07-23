@@ -1,5 +1,21 @@
+
+import { useContext } from "react";
 import loginImg from "../../assets/login/login.png";
+import { AuthContext } from "../../providers/AuthProviders";
+
 const Login = () => {
+    const{signIn}=useContext(AuthContext)
+  const handleLogin = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    console.log(email, password);
+    signIn(email, password).then((result) => {
+      const user = result.user;
+      console.log(user);
+    });
+  };
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
@@ -7,13 +23,14 @@ const Login = () => {
           <img src={loginImg} alt="" />
         </div>
         <div className="card flex-shrink-0 w-full md:w-1/2 max-w-sm shadow-2xl bg-base-100">
-          <div className="card-body">
+          <form onSubmit={handleLogin} className="card-body">
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Email</span>
               </label>
               <input
-                type="text"
+                type="email"
+                name="email"
                 placeholder="email"
                 className="input input-bordered"
               />
@@ -23,7 +40,8 @@ const Login = () => {
                 <span className="label-text">Password</span>
               </label>
               <input
-                type="text"
+                type="password"
+                name="password"
                 placeholder="password"
                 className="input input-bordered"
               />
@@ -34,9 +52,9 @@ const Login = () => {
               </label>
             </div>
             <div className="form-control mt-6">
-              <button className="btn btn-primary">Login</button>
+              <input type="submit" value="Login" className="btn btn-primary" />
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>

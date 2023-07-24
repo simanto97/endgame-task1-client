@@ -10,6 +10,8 @@ import AdmissionForm from "../Pages/Admission/AdmissionForm";
 import MyCollege from "../Pages/MyCollege/MyCollege";
 import ResetPassword from "../Pages/ResetPassword/ResetPassword";
 import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
+import NotFoundPage from "../Pages/NotFoundPage/NotFoundPage";
+import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([
   {
@@ -22,7 +24,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "/college/:id",
-        element: <CollegeDetails />,
+        element: (
+          <PrivateRoute>
+            <CollegeDetails />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/colleges",
@@ -38,7 +44,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "/my-college",
-        element: <MyCollege />,
+        element: (
+          <PrivateRoute>
+            <MyCollege />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/reset",
@@ -57,5 +67,9 @@ export const router = createBrowserRouter([
         element: <SignUp />,
       },
     ],
+  },
+  {
+    path: "*",
+    element: <NotFoundPage />,
   },
 ]);

@@ -31,7 +31,7 @@ const Admission = () => {
                 <td>{collegeRating}</td>
                 <td>
                   <Link to={`/admission-form/${_id}`}>
-                    <button>Admit</button>
+                    <button className="btn btn-ghost">Admit</button>
                   </Link>
                 </td>
               </tr>

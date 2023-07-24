@@ -2,8 +2,10 @@ import { useContext } from "react";
 import loginImg from "../../assets/login/login.png";
 import { AuthContext } from "../../providers/AuthProviders";
 import SocialLogin from "../Login/SocialLogin";
+import { useNavigate } from "react-router-dom";
 const SignUp = () => {
-  const { createUser, updateUserProfile } = useContext(AuthContext);
+  const { createUser, updateUserProfile, setLoading } = useContext(AuthContext);
+  const navigate = useNavigate();
   const handleSignUp = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -17,10 +19,19 @@ const SignUp = () => {
         const loggedUser = result.user;
         console.log(loggedUser);
         updateUserProfile(name, photoURL)
-          .then(() => {})
-          .catch((error) => console.log(error));
+          .then(() => {
+            setLoading(false);
+            navigate("/");
+          })
+          .catch((error) => {
+            console.log(error);
+            setLoading(false);
+          });
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        console.log(error);
+        setLoading(false);
+      });
   };
   return (
     <div className="hero min-h-screen bg-base-200">

@@ -11,16 +11,16 @@ const Colleges = () => {
   return (
     <div>
       <h2 className="text-center text-5xl font-bold">Top Colleges</h2>
-      <div className="px-28">
+      <div className="p-4 md:px-28">
         {colleges.map((college) => (
           <div
             key={college._id}
-            className="bg-white shadow-lg rounded-lg overflow-hidden flex mt-4"
+            className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row mt-4"
           >
             <img
               src={college.collegeImage}
               alt={college.collegeName}
-              className="w-1/3 h-auto object-cover"
+              className="md:w-1/3 h-auto object-cover"
             />
             <div className="p-4 flex-1">
               <h2 className="text-xl font-semibold">{college.collegeName}</h2>

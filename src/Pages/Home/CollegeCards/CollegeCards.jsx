@@ -23,7 +23,7 @@ const CollegeCards = () => {
   };
   return (
     <div>
-      <div className="mx-auto w-1/3 my-4">
+      <div className="mx-auto ml-10 md:ml-48 lg:ml-0 lg:w-1/3 my-4">
         <input
           className="input input-bordered md:w-72 rounded-r-none"
           onChange={(e) => setSearchText(e.target.value)}
@@ -39,7 +39,7 @@ const CollegeCards = () => {
           Search
         </button>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {collegeCards.map((collegeCard) => (
           <div
             key={collegeCard._id}

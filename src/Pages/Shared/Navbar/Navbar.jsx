@@ -50,7 +50,7 @@ const Navbar = () => {
       <div>
         {user ? (
           <div className="flex items-center">
-            <Link to='/update-profile'>
+            <Link to="/update-profile">
               {" "}
               <button>{user?.displayName}</button>
             </Link>
@@ -78,14 +78,14 @@ const Navbar = () => {
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-1/2 bg-gray-500 duration-1000 ">
-          {links.map(({ id, link }) => (
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-1/2 bg-gray-500 duration-1000 z-10">
+          {links.map((link) => (
             <li
-              key={id}
+              key={link?.id}
               className="px-4 cursor-pointer capitalize py-6 text-xl"
             >
-              <Link onClick={() => setNav(!nav)} to={link}>
-                {link}
+              <Link onClick={() => setNav(!nav)} to={link.path}>
+                {link.link}
               </Link>
             </li>
           ))}

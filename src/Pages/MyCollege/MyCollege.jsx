@@ -55,7 +55,6 @@ const MyCollege = () => {
             >
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">{collegeName}</div>
-                {/* <p className="text-gray-700 text-base mb-2">Name: {name}</p> */}
                 <p className="text-gray-700 text-base mb-2">
                   Subject: {subject}
                 </p>

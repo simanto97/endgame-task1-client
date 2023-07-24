@@ -9,6 +9,7 @@ import Admission from "../Pages/Admission/Admission";
 import AdmissionForm from "../Pages/Admission/AdmissionForm";
 import MyCollege from "../Pages/MyCollege/MyCollege";
 import ResetPassword from "../Pages/ResetPassword/ResetPassword";
+import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
 
 export const router = createBrowserRouter([
   {
@@ -45,7 +46,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/update-profile",
-        element: <Login />,
+        element: <UpdateProfile />,
       },
       {
         path: "/login",

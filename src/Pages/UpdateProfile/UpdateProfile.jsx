@@ -1,10 +1,5 @@
-
 const UpdateProfile = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+  return <div>hi</div>;
 };
 
 export default UpdateProfile;

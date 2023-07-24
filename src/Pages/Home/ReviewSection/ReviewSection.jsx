@@ -9,7 +9,10 @@ const ReviewSection = () => {
   }, []);
   return (
     <div className="flex flex-col items-center my-5">
-      <h2 className="text-center font-medium text-xl my-8">
+      <h1 className="text-center text-3xl mb-7 font-bold text-blue-800 uppercase border-b-2 pb-8">
+        Reviews
+      </h1>
+      <h2 className="text-center font-medium text-xl my-4">
         Slide to upper side to view Reviews
       </h2>
       <div className="h-52 carousel carousel-vertical rounded-box w-3/4 bg-slate-100 shadow-lg">

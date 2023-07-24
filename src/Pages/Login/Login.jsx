@@ -1,10 +1,11 @@
-
 import { useContext } from "react";
 import loginImg from "../../assets/login/login.png";
 import { AuthContext } from "../../providers/AuthProviders";
+import SocialLogin from "./SocialLogin";
+import { Link } from "react-router-dom";
 
 const Login = () => {
-    const{signIn}=useContext(AuthContext)
+  const { signIn } = useContext(AuthContext);
   const handleLogin = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -16,6 +17,7 @@ const Login = () => {
       console.log(user);
     });
   };
+
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
@@ -46,14 +48,17 @@ const Login = () => {
                 className="input input-bordered"
               />
               <label className="label">
-                <a href="#" className="label-text-alt link link-hover">
-                  Forgot password?
-                </a>
+                <Link to="/reset">
+                  <p className="label-text-alt link link-hover">
+                    Reset password?
+                  </p>
+                </Link>
               </label>
             </div>
             <div className="form-control mt-6">
               <input type="submit" value="Login" className="btn btn-primary" />
             </div>
+            <SocialLogin />
           </form>
         </div>
       </div>

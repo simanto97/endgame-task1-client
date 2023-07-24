@@ -12,7 +12,9 @@ const CollegeCards = () => {
 
   const handleSearch = () => {
     fetch(
-      `${import.meta.env.VITE_HOSTING_URL}/collegeSearchByCollegeName/${searchText}`
+      `${
+        import.meta.env.VITE_HOSTING_URL
+      }/collegeSearchByCollegeName/${searchText}`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -21,15 +23,19 @@ const CollegeCards = () => {
   };
   return (
     <div>
-      <div className="mx-auto">
+      <div className="mx-auto w-1/3 my-4">
         <input
-          className="input input-bordered"
+          className="input input-bordered md:w-72 rounded-r-none"
           onChange={(e) => setSearchText(e.target.value)}
           type="search"
+          placeholder="Search"
           name=""
           id=""
         />
-        <button onClick={handleSearch} className="btn btn-primary">
+        <button
+          onClick={handleSearch}
+          className="btn btn-primary rounded-l-none capitalize"
+        >
           Search
         </button>
       </div>

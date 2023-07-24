@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import loginImg from "../../assets/login/login.png";
 import { AuthContext } from "../../providers/AuthProviders";
+import SocialLogin from "../Login/SocialLogin";
 const SignUp = () => {
   const { createUser, updateUserProfile } = useContext(AuthContext);
   const handleSignUp = (event) => {
@@ -81,6 +82,7 @@ const SignUp = () => {
             <div className="form-control mt-6">
               <input type="submit" value="SignUp" className="btn btn-primary" />
             </div>
+            <SocialLogin />
           </form>
         </div>
       </div>
